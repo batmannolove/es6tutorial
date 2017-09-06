@@ -1,6 +1,6 @@
 # [ECMAScript 6 入门]()
 
-作者：[阮一峰](http://www.ruanyifeng.com)
+作者：[Chiyuan Ma](batmannolove.github.io)
 
 授权：<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a>
 
@@ -35,6 +35,6 @@
 1. [参考链接](#docs/reference)
 
 ## 其他
-- [源码](http://github.com/ruanyf/es6tutorial/)
-- [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
-- [反馈意见](https://github.com/ruanyf/es6tutorial/issues)
+- [源码](http://github.com/batmannolove/es6tutorial/)
+- [修订历史](https://github.com/batmannolove/es6tutorial/commits/gh-pages)
+- [反馈意见](https://github.com/batmannolove/es6tutorial/issues)
