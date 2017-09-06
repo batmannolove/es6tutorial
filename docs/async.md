@@ -75,11 +75,11 @@ asyncReadFile();
 
 ```javascript
 async function getStockPriceByName(name) {
-  //async表示函数里有异步操作   这个函数在调用时候可以在后面接上.then 就像下面调用时候一样
+  //mcy async表示函数里有异步操作   这个函数在调用时候可以在后面接上.then 就像下面调用时候一样
   var symbol = await getStockSymbol(name);
-  //不是返回给symbol一个东西，而是整个getStockPriceByName函数都返回，直到getStockSymbol有东西返回后，继续往下执行
+  //mcy 不是返回给symbol一个东西，而是整个getStockPriceByName函数都返回，直到getStockSymbol有东西返回后，继续往下执行
   var stockPrice = await getStockPrice(symbol);
-  //同上 函数也会返回一次
+  //mcy 同上 函数也会返回一次
   return stockPrice;
 }
 
@@ -91,6 +91,8 @@ getStockPriceByName('goog').then(function (result) {
 上面代码是一个获取股票报价的函数，函数前面的`async`关键字，表明该函数内部有异步操作。调用该函数时，会立即返回一个`Promise`对象。
 
 mcy 所谓await就意思是 wait后面这个函数 这个函数是个异步 需要花费时间
+
+mcy 这整个pattern的意义在于不需要嵌套着写callback了 第二个callback不需要写到第一个callback
 
 mcy 这个说明promise的意义在于,如果没有`async`来说明后面是一个Promise对象,那么由于异步,`getStockPriceByName('goog')`这里就会出错，因为里面是空的，还未返回值。
 
